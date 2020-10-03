@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Helvetica,Arial,Microsoft YaHei,sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse; }
+
+a {
+  text-decoration: none; }
+
+input {
+  outline: none;
+  border: 0; }
+
+body {
+  background: #999; }
+
+#bigBox {
+  width: 310px;
+  height: 600px;
+  margin: 30px auto 0; }
+  #bigBox .logoBox {
+    width: 310px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #bigBox .logoBox img {
+      width: 226px;
+      height: 106px; }
+  #bigBox .inputBox {
+    width: 310px;
+    height: 50px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cccccc; }
+    #bigBox .inputBox .imgbox {
+      width: 50px;
+      height: 50px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #bigBox .inputBox .imgbox img {
+        width: 25px;
+        height: 30px; }
+    #bigBox .inputBox input {
+      float: right;
+      width: 259px;
+      height: 30px;
+      border-left: 1px solid #fff;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      background: #cccccc;
+      padding-left: 10px; }
+    #bigBox .inputBox input::-webkit-input-placeholder {
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold; }
+  #bigBox .checkBox {
+    width: 310px;
+    height: 20px;
+    margin-top: 15px;
+    line-height: 20px;
+    font-size: 12px; }
+    #bigBox .checkBox .leftbox {
+      float: left;
+      color: #fff; }
+      #bigBox .checkBox .leftbox input {
+        border: 1px solid #000; }
+    #bigBox .checkBox > a {
+      display: block;
+      float: right;
+      color: #fff; }
+  #bigBox .inputBtn {
+    width: 310px;
+    height: 50px;
+    margin-top: 15px; }
+    #bigBox .inputBtn #button {
+      width: 310px;
+      height: 50px;
+      background: #25292e;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer; }
+  #bigBox .bottomBox {
+    width: 310px;
+    height: 50px;
+    margin-top: 15px;
+    cursor: pointer; }
+    #bigBox .bottomBox p {
+      width: 170px;
+      float: left;
+      padding-top: 13px; }
+      #bigBox .bottomBox p .iconfont {
+        color: #878787;
+        font-size: 20px;
+        padding-right: 10px; }
+        #bigBox .bottomBox p .iconfont:hover {
+          color: #555555; }
+    #bigBox .bottomBox > a {
+      display: block;
+      float: right;
+      font-size: 14px;
+      color: #fff;
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 2px solid #fff; }

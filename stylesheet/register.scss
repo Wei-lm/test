@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family:Helvetica,Arial,Microsoft YaHei,sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	// border-spacing: 0;
+}
+a{
+	text-decoration:none;
+}
+input{
+    outline: none;
+    border: 0;
+    // -webkit-appearance: none; 
+}
+
+// 注册页面样式
+body{
+    background-color: #999;
+}
+.big-box{
+    width: 1000px;
+    height: 680px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box{
+        width: 565px;
+        height: 650px; 
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        .logoBox{
+            width: 565px;
+            height: 150px;
+            text-align: center;
+            padding: 27px 0 ;
+            img{
+                width: 226px;
+                height: 106px;
+            }
+        }
+        .inputBox{
+            width: 565px;
+            height: 50px;
+            position: relative;
+            margin-top: 15px;
+            .txt{
+                display: block;
+                width: 78px;
+                height:50px;
+                padding: 18px 0;
+                text-align: left;
+                float: left;
+            }
+            input{
+                width: 320px;
+                height: 50px;
+                background: url(../images/loginuserBg.png) no-repeat;
+                background-size: 100% 100%;
+                color: #fff;
+                font-size: 14px;
+                font-weight: bold;
+                padding-left: 20px;
+                opacity: 0.99;              
+            }
+            input::-webkit-input-placeholder{
+                color: #fff;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .code{
+                width: 245px;
+            }
+            .codebox{
+                float:right;
+                width: 200px;
+                position: relative;
+                .codeImg{
+                    width: 64px;
+                    height: 28px;
+                    position: absolute;
+                    top: 20px;
+                    left: 0px;
+                    
+                }
+                >a{
+                    display: block;
+                    font-size: 12px;
+                    position: absolute;
+                    color: #fff;
+                    font-weight: normal;
+                    top: 30px;
+                    right: 43px;
+                }
+            }
+            #pwdInfo{
+                position: absolute;
+                top: 20px;
+                right: 10px;
+                width: 127px;
+                height: 28px;
+                border-spacing: 10px;
+                .content{
+                    width: 127px;
+                    height: 12px;
+                    background: url(https://imgs-qn.iliangcang.com/images/default/pwd_note_bg.png) no-repeat;
+                }
+                .info{
+                    width: 127px;
+                    height: 16px;
+                    color: #4c4c4c;
+                    font-weight: normal;
+                    span{
+                        font-size: 12px;
+                        display: inline-block;
+                        width: 38px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+    }
+    .inputCheck{
+        width: 565px;
+        height: 50px;
+        margin-top: 15px;
+        position: relative;
+        .checkBox{
+            width:320px;
+            height:18px;
+            position: absolute;
+            top: 16px;
+            left: 80px;
+            vertical-align: middle;
+            line-height: 0;
+            font-weight: normal;
+            font-size: 14px;
+            >input{
+                width: 14px;
+                height: 14px;
+                color: #fff;
+                border: 1px solid #000;
+            }
+        }
+    }
+    .inputBtn{
+        width: 565px;
+        height: 50px;
+        margin-top: 15px;
+        
+        #button{
+            position: relative;
+            left: 78px;
+            width: 300px;
+            height: 50px;
+            background: #25292e;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+    .bottomBox{
+        width: 565px;
+        height: 50px;
+        margin-top: 15px;
+        .bottom{
+            width: 320px;
+            height: 50px;
+            position: relative;
+            left: 78px;
+            cursor: pointer;
+            p{
+                width: 200px;
+                float: left;
+                padding-top: 13px;
+                .iconfont{
+                    color: #878787;
+                    font-size: 20px;
+                    padding-right:10px ;
+                    &:hover{
+                        color: #555555;
+                    }
+                }
+               
+            }
+            >a{
+                display: block;
+                float: right;
+                font-size:14px;
+                color: #fff;
+                height: 30px;
+                margin-right: 20px;
+                line-height: 30px;
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+}
