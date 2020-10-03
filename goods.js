@@ -9,6 +9,7 @@ define(["parabola", "jquery", "jquery-cookie"], function(Parabola, $){
                 var index = $(this).index();
                 var i = index;
                 $(".pic a").eq(index).stop().fadeIn(500).show().siblings().stop().fadeIn(500).hide();
+                $("#big a").eq(index).stop().fadeIn(100).show().siblings().stop().fadeIn(100).hide();
             })
            
             // 放大镜
@@ -36,7 +37,12 @@ define(["parabola", "jquery", "jquery-cookie"], function(Parabola, $){
 
 
 
-
+            // 售后须知
+            $(".shxz").mouseenter(function(){
+                $(".infoItem").css("display","block");
+            }).mouseleave(function(){
+                $(".infoItem").css("display","none");
+            })
 
         })
     }
