@@ -34,7 +34,8 @@ define(["parabola", "jquery", "jquery-cookie"], function(Parabola, $){
                 top: -2 * t
               })
             })
-
+            // 购物车
+            
 
 
             // 售后须知
