@@ -113,37 +113,13 @@ a{
 				color: #ccc;
 			}
 		}
-		.shopping{
-			width: 320px;
-			height: 120px;
-			background:skyblue;
-			position: absolute;
-			top: 56px;
-			right: 143px;
-			z-index: 1000;
-			text-align: center;
-			display: none;
-			p{
-				height: 80px;
-				background: #25292e;
-				line-height: 80px;
-				color: #ccc;
-			}
-			a{
-				display: block;
-				height: 40px;
-				line-height: 40px;
-				color: #fff;
-				background: #7dbfde;
-			}
-		}
 		.msgA{
 			height: 264px;
 			width: 190px;
 			background: #25292e;
 			position: absolute;
 			top: 56px;
-			z-index: 1000;
+			z-index: 100000;
 			right: 265px;
 			display: none;
 			a{

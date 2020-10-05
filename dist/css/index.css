@@ -98,34 +98,13 @@ a {
         padding: 0 15px; }
       #header .header-top ul .text:hover a {
         color: #ccc; }
-    #header .header-top .shopping {
-      width: 320px;
-      height: 120px;
-      background: skyblue;
-      position: absolute;
-      top: 56px;
-      right: 143px;
-      z-index: 1000;
-      text-align: center;
-      display: none; }
-      #header .header-top .shopping p {
-        height: 80px;
-        background: #25292e;
-        line-height: 80px;
-        color: #ccc; }
-      #header .header-top .shopping a {
-        display: block;
-        height: 40px;
-        line-height: 40px;
-        color: #fff;
-        background: #7dbfde; }
     #header .header-top .msgA {
       height: 264px;
       width: 190px;
       background: #25292e;
       position: absolute;
       top: 56px;
-      z-index: 1000;
+      z-index: 100000;
       right: 265px;
       display: none; }
       #header .header-top .msgA a {

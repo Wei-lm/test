@@ -7,7 +7,8 @@ require.config({
     "jquery-cookie": "jquery.cookie",
     parabola: "parabola",
     index: "index",
-    goods:"goods"
+    goods:"goods",
+    list:"list"
   },
   //jquery-cookie 依赖于jquery
   shim: {
@@ -22,7 +23,8 @@ require.config({
 
 
 //调用首页的代码
-require(["index","goods"], function(index,goods){
+require(["index","goods","list"], function(index,goods,list){
   index.body();
-  goods.body()
+  goods.body();
+  list.body()
 })

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>良仓</title>
-	<link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="./css/list.min.css">
 	<link rel="stylesheet" href="./css/iconfont/iconfont.css">
     <script src="js/require.js" async='true' defer data-main="js/main"></script>
 </head>
@@ -23,7 +24,7 @@
 					</li>
 					<li class="line">|</li>
 					<li class="text shop">
-						<a href="" class="a2">购物车</a>
+						<a href="./goodsCart.html" class="a2">购物车</a>
 					</li>
 					<li class="line">|</li>
 					<li class="text msg">
@@ -133,99 +134,56 @@
 				</aside>				
 			</article>
 		</nav>
-		<section class="banner">
-			<div class="leftbtn lrbtn" id="leftBtn">
-				<a href="" id="leftA">
-					<img src="./images/left.png" alt="">
-				</a>
-			</div>
-			<div class="rightbtn lrbtn" id="rightBtn">
-				<a href="" id="rightA">
-					<img src="./images/right.png" alt="">
-				</a>
-			</div>
-			<ul class="imgBox clearFix">
-				<!-- 左右都能够进行循环轮播效果 -->
-				<li>
-					<img src="./images/banner7.jpg" alt="">
-				</li>
-				<li>
-					<img src="./images/banner.jpg" alt="">
-				</li>
-				<li>
-					<img src="./images/banner1.jpg" alt="">
-				</li>
-				<li>
-					<img src="./images/banner2.jpg" alt="">
-				</li>
-				<li>
-					<img src="./images/banner3.jpg" alt="">
-				</li>
-				<li>
-					<img src="./images/banner4.jpg" alt="">
-				</li>
-				<li>
-					<img src="./images/banner5.jpg" alt="">
-				</li>
-				<li>
-					<img src="./images/banner6.jpg" alt="">
-				</li>
-				<li>
-					<img src="./images/banner7.jpg" alt="">
-				</li>
-				<li>
-					<img src="./images/banner.jpg" alt="">
-				</li>
-			</ul>
-			<ol class="actionBtn">
-				<li class="active"></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ol>
-		</section>
 	</header>
-	<section id="content">
-		<article class="content-top">
-			<aside class="a"><a href=""><img src="images/c1.jpg" alt=""></a></aside>
-			<aside class="b"><a href=""><img src="images/c2.jpg" alt=""></a></aside>
-			<aside class="c"><a href=""><img src="images/c5.jpg" alt=""></a></aside>
-			<aside class="d"><a href=""><img src="images/c3.jpg" alt=""></a></aside>
-			<aside class="e"><a href=""><img src="images/c4.jpg" alt=""></a></aside>	
-		</article>
-		<article class="content-bottom">
-			<aside class="cb-top">人气良品</aside>
-			<aside class="cb-center">
-				<!-- 假数据 -->
-				<!-- <div class="goodChilds">
-					<a class="goodsImg">
-						<img src="./images/goods1.jpg" alt="">
-					</a>
-					<a href="" class="goodsInfo">
-						<p class="money">￥70.00</p>
-						<p class="title">蜂蜜牛奶手工皂|深入滋养，肌肤细腻滑嫩</p>
-						<p class="desc">牛奶和蜂蜜让肌肤更紧致</p>
-					</a>
-					<div class="bar">
-						<a href="" class="who">
-							<img src="./images/p1.jpg" alt="">
-							施丹寇
-						</a>
-						<a href="" class="goodsFavCount">
-							<span></span>
-							<i class="iconfont">&#xe638;</i>
-						</a>
-					</div>
-				</div> -->
-			</aside>
-			<aside class="cb-bottom">
-				<a href="" class="more">MORE</a>
-			</aside>
-		</article>
+	<section id="goodsCart">
+       <aside class="carTitle">
+            <span>|</span>
+            <span>购物车</span>
+            <span>|</span>
+            <span>结算</span>
+            <span>|</span>
+       </aside>
+       <table class="carTab">
+            <tr>
+                <th class="txtl" width="110"><input id="check" type="checkbox" style="margin-left:12px;"/>全选</th>
+                <th width="300">良品</th>
+                <th width="120">数量</th>
+                <th width="160">单价（元）</th>
+                <th width="160">小计（元）</th>
+                <th>操作</th>
+            </tr>
+
+            <!-- <tr class="itemlist2">
+                <td   valign="top">
+                    <input type="checkbox" class="chkbox"/>
+                    <a href="#" class="gimgCon"><img src="https://imgs-qn.iliangcang.com/ware/upload/icon/2/31/31169.jpg"  /></a>
+
+                <td class="txtl">
+                    <p class="t"><a href="">品牌特卖新款正品七匹狼男士皮带 男式自动扣真皮腰带时尚牛皮 男-tmall.com天猫</a></p>
+                    <p class="b">尺码：M</p>
+                </td>
+                <td>
+                    <span class="opt">&lt;</span><input type="text" value="1" class="num2"/><span class="opt">&gt;</span>
+                    <p class="blue">已售罄，即将到货</p>
+                </td>
+                <td>2650.00</td>
+                <td>未优惠</td>
+                <td><a href="#" class="blue">删除</a></td>
+            </tr> -->
+
+            
+       </table>
+       <aside class="carKong">
+            
+            <img src="./images/empty.png" alt="">
+            <p>您的购物车还是空的</p>
+       </aside>
+       <button>立即结算</button>
+       <fieldset>
+           <legend>
+               <a href="list.html">继续购物</a>
+           </legend>
+       </fieldset>
 	</section>
 	<footer id="footer">
 		<section class="f-top">
